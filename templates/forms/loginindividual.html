@@ -1,0 +1,188 @@
+<style>
+
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* (Just ignore)top banner style */
+    .top-banner {
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: black;
+    font-family: Montserrat;
+    font-size: 20px;
+  }
+  
+  .top-banner a, .top-banner span {
+    display: inline-block;
+
+  }
+  
+  .top-banner a {
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    color: rgba(255, 255, 255, .8);
+  }
+  
+  .top-banner span{
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #a1c45a;
+    border-radius: 20px;
+  }
+  
+  .top-banner a:hover {
+    color: #fff9e0;
+  }
+    
+  body {
+        background: url('../static/image/diabetes.png') no-repeat fixed center center;
+        background-size: cover;
+        font-family: Montserrat;
+    }
+    
+    .logo {
+        width: 213px;
+        height: 36px;
+        background: url('http://i.imgur.com/fd8Lcso.png') no-repeat;
+        margin: 30px auto;
+    }
+    
+    .login-block {
+        width: 40%;
+        height: 40%;
+        padding: 1%;
+        background: #fff;
+        border-radius: 5px;
+        border-top: 5px solid black;
+        margin: 0 auto;
+        margin-right: 5%;
+        margin-top: 11%;
+  
+    }
+    
+    .login-block h1 {
+        text-align: center;
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+  #footer {
+    height: 60px;
+    font-size: 85%;
+    background-color: black;
+    margin-top: 15%;
+    padding-left: 137px;
+    padding-top: 12px;
+    font-family: Montserrat;
+  }
+  #footer > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  
+    .login-block input {
+        width: 100%;
+        height: 42px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-family: Montserrat;
+        padding: 0 20px 0 50px;
+        outline: none;
+    }
+    
+    .login-block input#username {
+        background: #fff url('../static/image/people.png') 20px top no-repeat;
+        background-size: 16px 80px;
+    }
+    
+    .login-block input#username:focus {
+        background: #fff url('../static/image/people.png') 20px bottom no-repeat;
+        background-size: 16px 80px;
+    }
+    
+    .login-block input#password {
+        background: #fff url('../static/image/lock.png') 20px top no-repeat;
+        background-size: 16px 80px;
+    }
+    
+    .login-block input#password:focus {
+        background: #fff url('../static/image/lock.png') 20px bottom no-repeat;
+        background-size: 16px 80px;
+    }
+    
+    .login-block input:active, .login-block input:focus {
+        border: 1px solid #428bca;
+    }
+    
+    .login-block button {
+        width: 100%;
+        height: 40px;
+        background: #428bca;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #a0999a;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: Montserrat;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .login-block button:hover {
+        background: #2a6496;
+    }
+    
+    </style>
+    
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    <div class="top-banner">
+    <a href="/"><b>Diabilities App</b></a>
+    </div>
+  
+  
+    <div class="login-block">
+      <h1>Login</h1>
+    
+        <form method ="post" action="/dashboardindividual">
+          <input type="text" value="" placeholder="Username" id="username" name="username"/>
+          <input type="password" value="" placeholder="Password" id="password" name="password"/>
+          <button style="background-color: black; color: #fff9e0; font-family: Montserrat;">Submit</button>
+          
+          <p align="center"> <br>{{ login_err }} <br><br></p>
+          
+          <a href="/forgot" style="margin-left: 30%;">Forgot Username or Password</a>
+        </form>
+      
+  </div>
+  
+  
+  <div id="footer">
+    <div class="container">
+      <p></p>
+      <p style="color: aquamarine"><b>Diabilities by Riyan Jain &copy; All Rights Reserved.</b></p>
+      
+    </div>
+  </div>

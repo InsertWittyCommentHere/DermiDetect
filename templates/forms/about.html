@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>About</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static',filename='image/logo.png') }}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='bootstrap-icons.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='boxicons.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='glightbox.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='remixicon.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='swiper-bundle.min.css') }}">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+
+  <style>
+    th, td {
+        padding-top: 10px;
+    }
+    
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+}  
+    .title{
+      border-bottom : 2px solid grey;
+      margin-bottom : 20px;
+}
+    .title_name{
+      font-size: 7vh;
+      font-weight: bold;
+    }
+
+    .title_details{
+      marging-bottom: 5px
+    }
+  
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+          <h1 class="logo me-auto me-lg-0">
+						<a href="/">
+								<img src="{{ url_for('static',filename='image/logo.png') }}" style="border-radius: 3px;" class="mx-2"> 
+							<span style="line-height: 40px;">DermiDetect AI</span>
+						</a>
+					</h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+					<nav id="navbar" class="navbar order-last order-lg-0">
+						<ul>
+							<li><a class="nav-link scrollto" href="/home">Home</a></li>
+							<li><a class="nav-link scrollto" href="/try_now">Try Now!</a></li>
+							<li><a class="nav-link scrollto" href="/learn">Learn</a></li>
+							<li><a class="nav-link scrollto active" href="/about">About Us</a></li>
+						</ul>
+						<i class="bi bi-list mobile-nav-toggle"></i>
+					</nav><!-- .navbar -->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>About</li>
+        </ol>
+        <h2>About Us</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+            <div class="portfolio-info">
+
+              <div class="title">
+                <div class="title_name">Riyan Jain</div>
+                <div class="title_details">Creator &  Founder, DermiDetect</div>
+              </div>
+
+                
+                
+              
+              
+              <p style="text-align: justify;">Riyan is currently a senior at Illinois Math and Science Academy (IMSA) in Aurora, where he conducts research and develops digital tools in computational biology and applied computer science. He created an AI-driven early prediction tool for Type 2 Diabetes, as well as an AI-powered skin cancer detection app called DermiDetectAI—both of which have been recognized by the U.S. Congress and honored with multiple grants.
+
+                <p style="text-align: justify;">Currently, Riyan conducts research at Northwestern University, investigating a novel method that uses Non-SDS electrophoresis to analyze the structural features of amyloid-β oligomers (AβOs). This work aims to inform the development of targeted therapies for Alzheimer’s disease.</p>
+
+                <p style="text-align: justify;">At IMSA, Riyan serves as president of the Debate Club. Outside of school, he is a violinist in IMSA’s Strolling Strings orchestra, performing at various community venues such as retirement homes. Additionally, he is the founder and President of MedEqual, a nonprofit organization committed to advancing diversity in clinical trials and medical research throughout the United States.</p>
+
+              <p style="text-align: justify;">Driven by his passion for science and service, Riyan aspires to become a physician-scientist, leveraging his research, technical acumen, and entrepreneurial spirit to improve healthcare outcomes worldwide.</p>
+</p>
+            </div>
+            </div>
+
+            <div class="col-lg-7" id="guideline">
+            <div class="portfolio-details-slider">
+              <div class="swiper-wrapper align-items-center">
+                <div>
+                    <img src="{{ url_for('static',filename='image/RiyanBioimage1.jpg') }}" alt="uploaded image" style="max-height:500px;max-width:350px;" class="center">
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+      <div>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95250.82546373364!2d-88.3067189!3d41.750972350000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ee54d4ed5111b%3A0x7fd1f848c350e85d!2sAurora%2C%20IL%2C%20USA!5e0!3m2!1sen!2sin!4v1698213439355!5m2!1sen!2sin" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+      <div class="container">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="ri-map-pin-line"></i>
+                <h4>Aurora, IL</h4>
+                <p>USA</p>
+              </div>
+
+              <div class="email">
+                <i class="ri-mail-line"></i>
+                <h4>Email:</h4>
+                <p>riyanpjain@gmail.com</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+						<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuV7Hu5QrusknPZhtAcJ8E9NHB_bsj7pSxNHG1QJEla5AaXQ/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>DermiDetect</h3>
+      <p>Our technology at your service on your fingertips</p>
+			<div class="social-links">
+				<a href="https://www.linkedin.com/company/dermidetect/?viewAsMember=true" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+				<!--
+				<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+				<a href="#" class="X.com"><i class="bx bxl-twitter"></i></a>
+				-->
+			</div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Riyan Jain</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="{{ url_for('static',filename='purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static',filename='bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static',filename='main.js') }}"></script>
+
+</body>
+
+</html>

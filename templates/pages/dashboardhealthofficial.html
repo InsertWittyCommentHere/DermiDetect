@@ -1,0 +1,168 @@
+
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>Diabilities | Dashboard</title>
+
+<!-- meta -->
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- /meta -->
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<!-- styles -->
+<link type="text/css" rel="stylesheet" href="/static/css/font-awesome-4.1.0.min.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/bootstrap-3.1.1.min.css">
+<link type="text/css" rel="stylesheet" href="/static/css/bootstrap-theme-3.1.1.min.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/layout.main.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.responsive.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.quickfix.css" />
+<!-- /styles -->
+
+<!-- favicons -->
+<link rel="shortcut icon" sizes="144x144" href="/static/ico/injection.png">
+
+<!-- /favicons -->
+
+<!-- scripts -->
+<script src="/static/js/libs/modernizr-2.8.2.min.js"></script>
+<!--[if lt IE 9]><script src="/static/js/libs/respond-1.4.2.min.js"></script><![endif]-->
+<!-- /scripts -->
+<style>
+  .top-banner {
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: black;
+    font-family: Montserrat;
+    font-size: 20px;
+  }
+  
+  .top-banner a, .top-banner span {
+    display: inline-block;
+
+  }
+  
+  .top-banner a {
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    color: rgba(255, 255, 255, .8);
+  }
+  
+  .top-banner span{
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #a1c45a;
+    border-radius: 20px;
+  }
+  
+  .top-banner a:hover {
+    color: #fff9e0;
+  }
+
+.dropdown {
+  width: 100%;
+  margin-left: 53%;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 40%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+</style>
+</head>
+<body style="background: url('../../static/image/healthofficial2.jpg') no-repeat fixed center center; background-size: cover;">
+
+  <!-- Wrap all page content here -->
+  <div id="wrap" >
+
+    <div class="top-banner">
+      <a href="/"><b>Diabilities App</b></a>
+  </div>
+
+    <!-- Begin page content -->
+    <main id="content" role="main" class="container">
+
+    <div class="page-header" style="margin-top: 5%">
+        <h1 style="color: black; margin-left: 50%"><b>The Health Official Dashboard</b></h1>
+        <h2 style="color: black; margin-left: 62%">Welcome, Admin</h1>  
+        <span style="display: block; margin-bottom: .5em;"></span>
+
+        <div class="dropdown">
+          <button class="btn btn-primary btn-lg btn-block" style="width: 40%; margin-right: 1%; text-align: right;">
+            <div style="clear: both; padding: 5px;">
+              <p class="alignleft">View Diabetes Trends By</p>
+              <p class="alignright" style="padding-right: 5px"><b> ̬</b></p>
+            </div>
+          </button>
+          <div class="dropdown-content">
+          <a href="statAge">Age</a>
+          <a href="statEducation">Education</a>
+          <a href="statGender">Gender</a>
+          <a href="statIncome">Income</a>
+          <a href="statPhysActivity">Physical Activity</a>
+          <a href="statSmoking">Smoking Status</a>
+          </div>
+        </div>
+        
+    </div>
+
+        
+    </main>
+
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <p></p>
+      <p style="color: aquamarine"><b>Diabilities by Riyan Jain &copy; All Rights Reserved.</b></p>
+      
+    </div>
+  </div>
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script type="text/javascript" src="/static/js/libs/jquery-1.11.1.min.js"><\/script>')</script>
+  <script type="text/javascript" src="/static/js/libs/bootstrap-3.1.1.min.js" defer></script>
+  <script type="text/javascript" src="/static/js/plugins.js" defer></script>
+  <script type="text/javascript" src="/static/js/script.js" defer></script>
+  <!-- Google Analytics - Change UA-XXXXX-X to be your site's ID -->
+  <script>
+  window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+  Modernizr.load({
+    load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+  });
+  </script>
+  <p style="background-image: url('../../static/img/diabetes.jpeg');"></p>
+</body>
+</html>

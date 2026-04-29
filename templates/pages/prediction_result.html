@@ -1,0 +1,166 @@
+<style>
+
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* (Just ignore)top banner style */
+    .top-banner {
+      margin-bottom: 2%;
+      text-align: center;
+      background-color: black;
+      font-family: Montserrat;
+      font-size: 20px;
+      width: 100%;
+    }
+    
+    .top-banner a, .top-banner span {
+      display: inline-block;
+    }
+    
+    .top-banner a {
+      width: 100%;
+      padding: 10px 0;
+      text-decoration: none;
+      color: #fff;
+      color: rgba(255, 255, 255, .8);
+    }
+    
+    .top-banner span{
+      width: 50px;
+      height: 28px;
+      line-height: 28px;
+      background-color: #a1c45a;
+      border-radius: 20px;
+    }
+    
+    .top-banner a:hover { 
+      color: #fff9e0;
+    }
+    
+        body {
+        background: url('../static/image/diabetesPredictionPage.jpeg') no-repeat fixed center center;
+        background-size: cover;
+        font-family: Montserrat;
+    }
+    
+    .logo {
+        width: 213px;
+        height: 36px;
+        background: url('http://i.imgur.com/fd8Lcso.png') no-repeat;
+        margin: 30px auto;
+    }
+    
+    .login-block {
+        width: 40%;
+        height: 40%;
+        padding: 1%;
+        background: #fff;
+        border-radius: 5px;
+        border-top: 5px solid black;
+        margin: 0 auto;
+        margin-right: 5%;
+        margin-top: 11%;
+  
+    }
+    
+    .login-block h1 {
+        text-align: center;
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+  #footer {
+    height: 60px;
+    width: 100%;
+    font-size: 85%;
+    background-color: black;
+    bottom: 0%;
+    padding-left: 137px;
+    padding-top: 12px;
+    font-family: Montserrat;
+    position: fixed;
+  }
+  #footer > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .content {
+    text-align: center;
+    position: fixed;
+    left: 7.5%;
+  
+  }
+
+  #header {
+    font-size: 33px;
+    
+    
+  }
+
+  #content {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  #research {
+    color: blue;
+    display: block;
+    padding: 2px;
+
+  }
+  #research a.visited{
+    color: blue;
+  }
+    
+    </style>
+    
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    <div class="top-banner">
+    <a href="/"><b>Diabilities App</b></a>
+    </div>
+  
+   <div class="content">
+    <span style="display: block; margin-bottom: 2.25em;"></span>
+
+    <p id="header">Prediction Result</p>
+    <span style="display: block; margin-bottom: 2.25em;"></span>
+
+    <h1><b>{{ result }}</b> </h1>
+    <span style="display: block; margin-bottom: 4.5em;"></span>
+
+    <p id="content">Learn more about Prediabetes</p>
+    <span style="display: block; margin-bottom: .3em;"></span>
+    <a target="_blank" href="https://www.cdc.gov/diabetes/basics/prediabetes.html" id="research">https://www.cdc.gov/diabetes/basics/prediabetes.html</a>
+    <a target="_blank" href="https://www.webmd.com/diabetes/what-is-prediabetes" id="research">https://www.webmd.com/diabetes/what-is-prediabetes</a>
+
+    <span style="display: block; margin-bottom: 3.75em;"></span>
+
+    <p id="content">Learn more about Type 2 Diabetes</p>
+    <span style="display: block; margin-bottom: .3em;"></span>
+    <a target="_blank" href="https://www.cdc.gov/diabetes/basics/index.html" id="research">https://www.cdc.gov/diabetes/basics/index.html</a>
+    <a target="_blank" href="https://www.niddk.nih.gov/health-information/diabetes" id="research">https://www.niddk.nih.gov/health-information/diabetes</a>
+    <a target="_blank" href="https://www.webmd.com/diabetes/type-2-diabetes" id="research">https://www.webmd.com/diabetes/type-2-diabetes</a>
+
+
+   </div>
+
+  <div id="footer">
+    <div class="container">
+      <p></p>
+      <p style="color: aquamarine"><b>Diabilities by Riyan Jain &copy; All Rights Reserved.</b></p>
+      
+    </div>
+  </div>
